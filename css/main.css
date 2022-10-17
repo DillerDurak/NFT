@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oxanium:wght@400;500;700&display=swap');
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Oxanium', cursive;
+    height: 100vh;
+    width: 100vw;
+    background-color: #140C1F;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 160px;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: space-between;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo_img{
+    width: 70px;
+    height: 70px;
+}
+
+.logo_text{
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, #382a4d 0%, #140C1F 90%);
+    height: 70px;
+    width: 640px;
+}
+
+.nav_menu .menu_item{
+    color: white;
+}
+
+.settings{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.settings .wallet{
+    background-color: #AD1AAF;
+    width: 160px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.wallet::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 15px;
+    height: 30px;
+    background-color: #AD1AAF;
+    border: 5px solid #140C1F;
+}
+
+.wallet::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    width: 15px;
+    height: 30px;
+    background-color: #AD1AAF;
+    border: 5px solid #140C1F;
+}
+
+.section{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container__info{
+    width: 550px;
+}
+
+.container__info h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.container__info p{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding-bottom: 90px;
+}
+
+.container__buttons{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.container__buttons .explore_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #AD1AAF;
+    position: relative;
+    border: 1px solid #AD1AAF;
+    width: 200px;
+    height: 60px;
+}
+
+.explore_button::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 15px;
+    height: 50px;
+    border: 5px solid #140C1F;
+    background-color: #AD1AAF;
+}
+
+.explore_button::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    width: 15px;
+    height: 50px;
+    border: 5px solid #140C1F;
+    background-color: #AD1AAF;
+}
+
+.container__buttons .create_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #140C1F;
+    position: relative;
+    border: 1px solid #AD1AAF;
+    width: 160px;
+    height: 60px;
+}
+
+.create_button::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 15px;
+    height: 50px;
+    border: 5px solid #140C1F;
+    background-color: #AD1AAF;
+}
+
+.create_button::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    width: 15px;
+    height: 50px;
+    border: 5px solid #140C1F;
+    background-color: #AD1AAF;
+}
+
+.container__images{
+    display: flex;
+    position: relative;
+    width: 650px;
+}
+
+.image_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    border-top: 2.5px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    position: absolute;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(-225deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+        
+}
+
+.image_container.first{
+    top: 40px;
+    left: 100px;
+    z-index: 2;
+}
+
+.image_container.second{
+    top: 100px;
+    right: 0;
+    z-index: 2;
+
+}
+
+.image_container.third{
+    top: 0;
+    left: 230px;
+    z-index: 3;
+}
+
+.image_container img{
+    width: 220px;
+    height: 220px;
+}
+
+.image_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 3;
+    font-weight: 500;
+}
+
+.image_name{
+    font-size: 22px;
+}
+
+.image_price{
+    font-size: 15px;
+}
+
+.milky_way{
+    margin-top: -140px;
+    width: calc(100% - 20px);
+}
+
+.container.wallets{
+    flex-direction: column;
+    align-items: center;
+}
+
+.container.wallets h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    background: linear-gradient(-225deg, white, #F81DFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container.wallets h1{
+    font-size: 80px;
+    color: white;
+    font-weight: 500;
+    padding: 50px 0 100px 0;
+}
+
+.wallets_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 10px;
+}
+
+.wallet_content{
+    background: linear-gradient(-225deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    width: 190px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 30px;
+    color: white;
+}
+
+.wallet_image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(-225deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallet_image img{
+    width: 90px;
+    height: 90px;
+}
+
+.wallet_content p{
+    font-size: 15px;
+}
